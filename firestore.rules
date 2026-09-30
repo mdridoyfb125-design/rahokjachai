@@ -1,0 +1,21 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Fraud reports collection
+    match /fraud_reports/{reportId} {
+      // Anyone can search and read reports
+      allow read: if true;
+      
+      // Anyone can create a report with valid data
+      allow create: if request.resource.data.customerPhone is string
+                    && request.resource.data.customerPhone.size() >= 11
+                    && request.resource.data.sellerShopName is string
+                    && request.resource.data.feedbackText is string;
+      
+      // Admin can delete reports
+      allow delete: if true;
+      allow update: if false;
+    }
+  }
+}

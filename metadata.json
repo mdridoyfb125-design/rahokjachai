@@ -1,0 +1,8 @@
+{
+  "name": "সেলারগার্ড - ফ্রড কাস্টমার চেকার",
+  "description": "অনলাইন পেজ ও ই-কমার্স বিক্রেতাদের জন্য কাস্টমার ফ্রড ভেরিফিকেশন ও ডেলিভারি রিটার্ন প্রতিরোধ টুল।",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

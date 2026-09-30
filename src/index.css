@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Hind Siliguri', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  /* Highlighter effect requested by user */
+  .yellow-highlight {
+    background-color: #fde047;
+    color: #0f172a;
+    padding: 0.1rem 0.45rem;
+    border-radius: 0.2rem;
+    font-weight: 700;
+    display: inline-block;
+  }
+
+  /* Line-by-line text highlighter */
+  .text-highlighter-yellow {
+    background-color: #fde047;
+    color: #09090b;
+    padding: 0.15rem 0.5rem;
+    border-radius: 0.25rem;
+    font-weight: 700;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    display: inline;
+    line-height: 1.9;
+  }
+}

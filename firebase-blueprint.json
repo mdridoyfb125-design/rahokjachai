@@ -1,0 +1,55 @@
+{
+  "$schema": "https://firebase.google.com/schemas/firestore-blueprint.json",
+  "entities": {
+    "fraud_reports": {
+      "title": "Fraud Reports",
+      "description": "Reported customer fraud records and feedbacks from online business owners",
+      "fields": {
+        "customerPhone": {
+          "type": "string",
+          "description": "Normalized 11-digit Bangladeshi mobile number"
+        },
+        "customerName": {
+          "type": "string",
+          "description": "Name given by customer during order"
+        },
+        "sellerShopName": {
+          "type": "string",
+          "description": "Name of the seller business, page or website"
+        },
+        "sellerPlatform": {
+          "type": "string",
+          "description": "Platform e.g. facebook, instagram, website, daraz"
+        },
+        "category": {
+          "type": "string",
+          "description": "Type of fraud e.g. refused_delivery, phone_switched_off, fake_order"
+        },
+        "lossAmount": {
+          "type": "number",
+          "description": "Courier and return charge lost in BDT"
+        },
+        "courierService": {
+          "type": "string",
+          "description": "Courier used e.g. Steadfast, Pathao, RedX"
+        },
+        "feedbackText": {
+          "type": "string",
+          "description": "Detailed explanation of what the customer did"
+        },
+        "location": {
+          "type": "string",
+          "description": "Customer location or delivery address area"
+        },
+        "orderNumber": {
+          "type": "string",
+          "description": "Optional order or tracking reference"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "ISO timestamp"
+        }
+      }
+    }
+  }
+}
